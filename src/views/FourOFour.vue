@@ -12,8 +12,8 @@ export default {
 <template>
   <v-container class="four-o-four-page">
     <v-row justify="center">
-      <v-col cols="4">
-        <four-o-four-icon class="svg"/>
+      <v-col cols="12" md="4">
+        <four-o-four-icon class="four-o-four-page__vector"/>
       </v-col>
     </v-row>
 
@@ -26,9 +26,10 @@ export default {
   </v-container>
 </template>
 
-<style scoped>
-.svg {
-  height: 100%;
-  width: 100%;
+<style lang="scss" scoped>
+.four-o-four-page {
+  &__vector {
+    width: 100%;
+  }
 }
 </style>

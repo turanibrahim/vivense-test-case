@@ -1,15 +1,19 @@
 <script>
 export default {
-  name: 'Home',
+  name: 'FourOFour',
 };
 </script>
 
 <template>
-  <v-container class="home-page">
-    <v-row justify="center" align="center">
+  <v-container class="four-o-four-page">
+    <v-row justify="center">
       <v-col cols="auto">
-        <h1>Home Page</h1>
+        asdsa
       </v-col>
     </v-row>
   </v-container>
 </template>
+
+<style scoped>
+
+</style>

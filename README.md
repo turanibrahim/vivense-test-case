@@ -1,6 +1,9 @@
 # Vivense test Case
 Job application test case from Vivense based on Vue.js, Vue-Router and Vuex.
 
+## Live Version
+https://vivense-test-case.vercel.app/
+
 ## Genel Kriterler
 - Ürün verilerini uygulamaya veren bir Mock API oluşturmalısın. Bütün ürün verileri oluşturacağın API üzerinden gelmeli. İstediğin gibi bir ürün modeli oluşturabilirsin.
 - İstersen kendin bir API yaratabilirsin veya Firebase, MockAPI gibi hazır araçlar kullanabilirsin.

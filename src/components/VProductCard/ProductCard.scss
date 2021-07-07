@@ -1,5 +1,8 @@
 .product-card {
   cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
   &__image {
     position: relative;
@@ -26,5 +29,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  &__actions {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
   }
 }

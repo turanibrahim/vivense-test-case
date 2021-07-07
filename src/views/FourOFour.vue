@@ -20,6 +20,11 @@ export default {
     <v-row justify="center">
       <v-col cols="auto">
         <h1 class="display-4"> {{ $t('fourOFour.error.title') }} </h1>
+      </v-col>
+    </v-row>
+
+    <v-row justify="center">
+      <v-col cols="auto">
         <p class="subtitle-1"> {{ $t('fourOFour.error.description') }} </p>
       </v-col>
     </v-row>

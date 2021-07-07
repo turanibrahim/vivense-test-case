@@ -209,3 +209,9 @@ export default {
     </v-row>
   </v-container>
 </template>
+
+<style lang="scss">
+.home-page {
+  max-width: 1280px;
+}
+</style>

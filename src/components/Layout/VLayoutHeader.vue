@@ -19,13 +19,11 @@ export default {
       mdi mdi-basket
     </v-icon>
 
-    <v-btn text @click="redirectHome">
+    <v-btn text @click="redirectHome" class="hidden-md-and-down">
       <h1 class="display-1">
         {{ $t('website.title') }}
       </h1>
     </v-btn>
-
-    <v-spacer></v-spacer>
   </v-app-bar>
 </template>
 

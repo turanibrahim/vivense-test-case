@@ -1,0 +1,30 @@
+.product-card {
+  cursor: pointer;
+
+  &__image {
+    position: relative;
+  }
+
+  &__add-to-favorite {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .v-chip {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+
+  &__add-to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

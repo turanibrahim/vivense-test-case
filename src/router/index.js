@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/:language',
-    component: () => import(/* webpackChunkName: "main" */ '../App'),
+    component: () => import(/* webpackChunkName: "language-container" */ '../views/LanguageContainer'),
     children: [
       {
         path: '',

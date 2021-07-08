@@ -34,7 +34,7 @@ export default {
           image: this.image,
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
-          stock: this.getRandomRatingAmount(),
+          stock: this.productHasStock() ? this.getRandomRatingAmount() : 0,
           price: {
             value: this.getRandomPrice(),
             currency: 'TRY',
@@ -56,6 +56,9 @@ export default {
   },
   getRandomRating() {
     return Math.floor(Math.random() * 4) + 1;
+  },
+  productHasStock() {
+    return Math.random() < 0.8;
   },
   getRandomRatingAmount() {
     return Math.floor(Math.random() * 352);

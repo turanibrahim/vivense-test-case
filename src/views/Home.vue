@@ -10,7 +10,7 @@ export default {
         {
           id: 0,
           title: 'Nunc sodales dignissim nibh at lacinia',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -19,7 +19,7 @@ export default {
         {
           id: 1,
           title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -28,7 +28,7 @@ export default {
         {
           id: 2,
           title: 'Pellentesque condimentum est vel diam lobortis',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: 0,
@@ -38,7 +38,7 @@ export default {
         {
           id: 3,
           title: 'Vel fermentum massa molestie. Proin tempus metus a pretium mattis',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -47,7 +47,7 @@ export default {
         {
           id: 4,
           title: 'Nulla venenatis vestibulum sit amet sit amet leo',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -56,7 +56,7 @@ export default {
         {
           id: 5,
           title: 'Praesent eu ex suscipit, posuere purus nec',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -66,7 +66,7 @@ export default {
         {
           id: 6,
           title: 'Pellentesque id orci nibh',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -75,7 +75,7 @@ export default {
         {
           id: 7,
           title: 'Aliquam non magna nec elit commodo vestibulum',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: 12,
@@ -84,7 +84,7 @@ export default {
         {
           id: 8,
           title: 'Pellentesque quis mi nec turpis euismod',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -93,7 +93,7 @@ export default {
         {
           id: 9,
           title: 'Quis aliquet purus nulla id ligula',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: 0,
@@ -103,7 +103,7 @@ export default {
         {
           id: 10,
           title: 'Nulla ut viverra ante, in posuere eros',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -112,7 +112,7 @@ export default {
         {
           id: 11,
           title: 'Curabitur eget gravida turpis',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -121,7 +121,7 @@ export default {
         {
           id: 12,
           title: 'Sed tristique commodo tortor a aliquam',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -130,7 +130,7 @@ export default {
         {
           id: 13,
           title: 'Nunc ut nisl dictum augue congue',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -140,7 +140,7 @@ export default {
         {
           id: 14,
           title: 'Curabitur iaculis condimentum ipsum,',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),
@@ -150,7 +150,7 @@ export default {
         {
           id: 15,
           title: 'Etiam ac tellus sed arcu mollis gravida ac placerat lorem',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: 0,
@@ -159,7 +159,7 @@ export default {
         {
           id: 16,
           title: 'Integer tempus magna nisi',
-          image: 'https://picsum.photos/300/200',
+          image: 'https://picsum.photos/310/200',
           ratingAmount: this.getRandomRatingAmount(),
           averageRating: this.getRandomRating(),
           stock: this.getRandomRatingAmount(),

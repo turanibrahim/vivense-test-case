@@ -23,7 +23,6 @@ export default {
     <v-col class="product-card__image" cols="12">
       <v-img
         height="200px"
-        contain
         :src="image"
         @click="$emit('click')"
       />

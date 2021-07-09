@@ -21,7 +21,7 @@ export default new Vuex.Store({
     setProducts(state, payload) {
       state.products = payload;
     },
-    addNewProducts(state, payload) {
+    addProducts(state, payload) {
       state.products = [...state.products, ...payload];
     },
     setPage(state, newPage) {

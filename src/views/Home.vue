@@ -79,6 +79,14 @@ export default {
         await this.changePage(newPage, false);
       }
     },
+    openProductDetail(productId) {
+      this.$router.push({
+        name: 'ProductDetails',
+        params: {
+          id: productId,
+        },
+      });
+    },
   },
 };
 </script>
@@ -99,6 +107,7 @@ export default {
       <v-row v-if="isProductListVisibleOnProductFetch">
         <v-col v-for="product in products" :key="product.id" sm="6" md="4" lg="3">
           <v-product-card
+            :id="product.id"
             :price="product.price"
             :special-price="product.specialPrice"
             :title="product.title"
@@ -107,6 +116,7 @@ export default {
             :average-rating="product.averageRating"
             :badge-label="getStockLabel(product)"
             badge-color="error"
+            @click="openProductDetail"
           />
         </v-col>
       </v-row>

@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="details-page">
-    test
+    {{ $route.params.id }}
   </div>
 </template>
 

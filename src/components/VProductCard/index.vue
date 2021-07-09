@@ -7,6 +7,10 @@ export default {
   name: 'VProductCard',
   components: { ProductCardPrice, ProductCardContent, ProductCardImage },
   props: {
+    id: {
+      type: [String, Number],
+      required: true,
+    },
     image: {
       type: String,
       default: '',
@@ -66,7 +70,7 @@ export default {
       :image="image"
       :badge-color="badgeColor"
       :badge-label="badgeLabel"
-      @click="$emit('click')"
+      @click="$emit('click', id)"
       @click:add-to-cart="$emit('click:add-to-cart')"
     >
       <template #add-to-favorite>

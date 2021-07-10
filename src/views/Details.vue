@@ -38,12 +38,17 @@ export default {
     isProductValid() {
       return !!this.productDetails;
     },
-    priceLabel() {
+    productHasSpecialPrice() {
+      return this.productDetails.specialPrice;
+    },
+    defaultPriceLabel() {
       return money({ ...this.productDetails.price });
     },
     specialPriceLabel() {
-      return this.productDetails.specialPrice
-        ? money(this.productDetails.specialPrice) : this.priceLabel;
+      return money(this.productDetails.specialPrice);
+    },
+    priceLabel() {
+      return this.productHasSpecialPrice ? this.specialPriceLabel : this.defaultPriceLabel;
     },
     justifyQuantityBasedOnDevice() {
       return this.isMobile ? 'center' : 'start';
@@ -83,12 +88,13 @@ export default {
 
         <v-row class="my-5" no-gutters justify="space-between" align="center">
           <v-col cols="auto">
-            <span class="pr-2 text-h6">{{ specialPriceLabel }}</span>
+            <span class="pr-2 text-h6">{{ priceLabel }}</span>
+
             <span
-              v-if="productDetails.specialPrice"
+              v-if="productHasSpecialPrice"
               class="text-subtitle-2 text-decoration-line-through error--text"
             >
-              {{ priceLabel }}
+              {{ defaultPriceLabel }}
             </span>
           </v-col>
 

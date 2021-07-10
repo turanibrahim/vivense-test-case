@@ -16,6 +16,7 @@ export default new Vuex.Store({
     page(state) {
       return state.page;
     },
+    productDetails: (state) => (id) => state.products.find((item) => item.id === id),
   },
   mutations: {
     setProducts(state, payload) {

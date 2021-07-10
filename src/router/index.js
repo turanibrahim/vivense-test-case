@@ -20,7 +20,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "details" */ '../views/Details'),
       },
       {
-        name: 'fourOFour',
+        name: 'FourOFour',
         path: '*',
         component: () => import(/* webpackChunkName: "fourOFour" */ '../views/FourOFour'),
       },
@@ -39,7 +39,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  const { name, params } = to;
+  const { name, params = {} } = to;
   const { language = '' } = params;
 
   if (languages.includes(language)) {
@@ -47,7 +47,7 @@ router.beforeEach((to, from, next) => {
   } else if (name) {
     next({ path: `/${defaultLocale}${to.path}`, params: { language: defaultLocale } });
   } else {
-    next({ name: 'fourOFour', params: { language: defaultLocale } });
+    next({ name: 'FourOFour', params: { language: defaultLocale } });
   }
 });
 

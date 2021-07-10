@@ -17,8 +17,5 @@ import VLayoutHeader from '@/components/Layout/VLayoutHeader';
 export default {
   name: 'App',
   components: { VLayoutFooter, VLayoutHeader },
-  data: () => ({
-    //
-  }),
 };
 </script>

@@ -1,5 +1,5 @@
 # Vivense test Case
-This test case project developed with vue, vuex, vue-router and vuetify.I didn't want to spend time to build product API, so I have created my own product builder. This builder gets it power to Math.random() function. Besides, I added setTimeout between produce process for prevent duplication and simulate real world API behavior. Because of this, I added loader animation for making application more realistic.
+This test case project developed with vue, vuex, vue-router and vuetify. I didn't want to spend time to build product API, so I have created my own product builder. This builder gets it power to Math.random() function. Besides, I added setTimeout between produce process for prevent duplication and simulate real world API behavior. Because of this, I added loader animation for making application more realistic.
 
 Missing points of the random product builder is, when user refresh page every product will be recreated randomly so if you refresh on product details page, you will be redirected to 404 page. We can prevent this with using vuex-persist library, but I didn't want to add it into the project, because it will make more complex to project.
 

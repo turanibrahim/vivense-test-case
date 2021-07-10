@@ -32,9 +32,6 @@ export default {
     ...mapActions({
       fetchProductListAction: 'fetchProductList',
     }),
-    getStockLabel(product) {
-      return !product.stock && this.$t('out.of.stock');
-    },
     getPageFromQuery() {
       const { page = 1 } = this.$route.query;
 
@@ -78,6 +75,9 @@ export default {
 
         await this.changePage(newPage, false);
       }
+    },
+    getStockLabel(product) {
+      return !product.stock && this.$t('out.of.stock');
     },
     openProductDetail(productId) {
       this.$router.push({

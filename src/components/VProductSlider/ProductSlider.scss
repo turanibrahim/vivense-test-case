@@ -1,0 +1,42 @@
+.v-product-slider {
+  height: 60vh;
+  width: 100%;
+
+  .swiper {
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__main {
+    height: 80%;
+    width: 100%;
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 4px 0;
+
+    .swiper-slide {
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  &__thumbs .swiper-slide-active {
+    opacity: 1;
+  }
+}

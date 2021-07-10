@@ -8,6 +8,7 @@ export default {
   components: { VProductSlider },
   data() {
     return {
+      quantity: 1,
     };
   },
   computed: {
@@ -66,6 +67,23 @@ export default {
         },
       });
     }
+  },
+  methods: {
+    reduceQuantity() {
+      if (Number(this.quantity) > 1) {
+        this.quantity = Number(this.quantity) - 1;
+      }
+    },
+    increaseQuantity() {
+      this.quantity = Number(this.quantity) + 1;
+    },
+    handleQuantityChange(value) {
+      if (value < 0) {
+        this.quantity = 1;
+      } else {
+        this.quantity = value;
+      }
+    },
   },
 };
 </script>
@@ -140,17 +158,24 @@ export default {
           <v-col cols="auto" class="grey lighten-3 pa-2 mr-2">
             <v-row no-gutters align="center">
               <v-col class="mr-2" cols="auto">
-                <v-btn text icon>
+                <v-btn text icon @click="reduceQuantity">
                   <v-icon>mdi mdi-minus</v-icon>
                 </v-btn>
               </v-col>
 
               <v-col cols="auto">
-                <v-text-field class="product-details__quantity" solo value="1" hide-details/>
+                <v-text-field
+                  class="product-details__quantity"
+                  :value="quantity"
+                  type="number"
+                  solo
+                  hide-details
+                  @change="handleQuantityChange"
+                />
               </v-col>
 
               <v-col class="ml-2" cols="auto">
-                <v-btn text icon>
+                <v-btn text icon @click="increaseQuantity">
                   <v-icon>mdi mdi-plus</v-icon>
                 </v-btn>
               </v-col>
@@ -178,12 +203,22 @@ export default {
   </v-container>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .product-details {
   max-width: 1280px;
 
   &__quantity {
     max-width: 64px;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance:textfield;
+    }
   }
 }
 </style>
